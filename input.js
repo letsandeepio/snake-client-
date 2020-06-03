@@ -4,6 +4,13 @@ const handleEndInput = (data) => {
   }
 };
 
+const inputKey = {
+  w: 'Up',
+  a: 'Left',
+  s: 'Down',
+  d: 'Right'
+};
+
 const setupInput = function () {
   const stdin = process.stdin;
   stdin.setRawMode(true);
@@ -11,7 +18,9 @@ const setupInput = function () {
   stdin.resume();
   stdin.on('data', handleEndInput);
   stdin.on('data', function (data) {
-    console.log(data);
+    if (inputKey[data]) {
+      console.log(inputKey[data]);
+    }
   });
   return stdin;
 };
