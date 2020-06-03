@@ -10,7 +10,12 @@ const messages = [
   'HEY COMRADES',
   'This is fun',
   'Victory is mine',
-  'HAKUNA MATATA!!!'
+  'HAKUNA MATATA!!!',
+  'UNSTOPPBALE',
+  'BULL DOZER',
+  'GET OUT OF MY WAY',
+  'TERMINATOR',
+  'I MA BACK'
 ];
 
 const inputKey = {
