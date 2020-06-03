@@ -10,7 +10,7 @@ const connect = function () {
   conn.on('connect', () => {
     console.log('Successfully connected to game server');
     conn.write('Name: SKC');
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < 5; i++) {
       setTimeout(() => {
         conn.write('Move: up');
       }, 100 * i);
